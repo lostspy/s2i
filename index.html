@@ -1,5 +1,89 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>Hello, world from nginx!</h1>
-  </body>
+<head>
+  <title>My Demo Web Page</title>
+  <style>
+    /* define some colors */
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --success-color: #28a745;
+      --danger-color: #dc3545;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+    }
+
+    /* apply some styles to the headings */
+    h1, h2, h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    /* apply some styles to the links */
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* apply some styles to the buttons */
+    .btn {
+      color: #fff;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+
+    .btn:hover, .btn:focus {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+
+    .btn-success {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+    }
+
+    .btn-danger {
+      background-color: var(--danger-color);
+      border-color: var(--danger-color);
+    }
+
+    .btn-warning {
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+    }
+
+    .btn-info {
+      background-color: var(--info-color);
+      border-color: var(--info-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Demo Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to my demo page!</h2>
+    <p>This is a colorful and stylish web page that you can use to demonstrate web development concepts or showcase your work.</p>
+    <button class="btn btn-success">Click me!</button>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Demo Web Page. All rights reserved.</p>
+  </footer>
+</body>
 </html>
