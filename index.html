@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Our Website!</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		/* Add some style to the page */
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #F0F0F0;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-		h1 {
-			font-size: 3rem;
-			font-weight: bold;
-			color: #0077CC;
-			text-align: center;
-			margin-top: 1rem;
-		}
-		p {
-			font-size: 1.2rem;
-			line-height: 1.5;
-			margin: 2rem auto;
-			max-width: 50rem;
-			padding: 0 1rem;
-			text-align: center;
-		}
-		.button {
-			display: inline-block;
-			background-color: #0077CC;
-			color: #FFF;
-			font-size: 1.2rem;
-			font-weight: bold;
-			text-decoration: none;
-			padding: 1rem 2rem;
-			border-radius: 2rem;
-			margin-top: 2rem;
-			transition: background-color 0.3s;
-		}
-		.button:hover {
-			background-color: #005EA5;
-		}
-	</style>
+  <title>My Demo Web Page!!!!</title>
+  <style>
+    /* define some colors */
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --success-color: #28a745;
+      --danger-color: #dc3545;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+    }
+
+    /* apply some styles to the headings */
+    h1, h2, h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    /* apply some styles to the links */
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* apply some styles to the buttons */
+    .btn {
+      color: #fff;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+
+    .btn:hover, .btn:focus {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+
+    .btn-success {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+    }
+
+    .btn-danger {
+      background-color: var(--danger-color);
+      border-color: var(--danger-color);
+    }
+
+    .btn-warning {
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+    }
+
+    .btn-info {
+      background-color: var(--info-color);
+      border-color: var(--info-color);
+    }
+  </style>
 </head>
 <body>
-	<h1>Welcome to Our Website!</h1>
-	<p>Thank you for visiting our website. We are excited to share our products and services with you. Our team of experts is dedicated to providing the best solutions for your needs.</p>
-	<a href="#" class="button">Learn More</a>
+  <header>
+    <h1>My Demo Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to my demo page!</h2>
+    <p>This is a colorful and stylish web page that you can use to demonstrate web development concepts or showcase your work.</p>
+    <button class="btn btn-success">Click me!</button>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Demo Web Page. All rights reserved.</p>
+  </footer>
 </body>
 </html>
